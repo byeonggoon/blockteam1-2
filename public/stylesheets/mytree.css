@@ -1,0 +1,105 @@
+
+#header{
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+    /* z-index: 1000; */
+    font-size: 0;
+    background-color: white;
+    padding-bottom: 162px;
+    /* border: 1px solid red; */
+}
+.header_inner{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    
+    /* border: 1px solid green; */
+}
+
+.header_logo{
+    display: inline;
+    vertical-align: middle;
+    margin-right: 300px;
+
+    /* border: 1px solid blue; */
+
+}
+.header_logo img{
+    width: 350px;
+    
+}
+.header_select{
+    
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+
+    /* border: 1px solid yellow; */
+}
+.header_select_symbol{
+    padding: 0 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.mytreeinfo{
+    text-align: left;
+    /* position: absolute; */
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.mytreetitle{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.totaltree{
+    text-align: center;
+    margin: 15px 15px;
+}
+.myaccounttree{
+    margin: 15px 0;
+}
+.mytreehash{
+    margin: 15px 0;
+}
+.mymore{
+	display: inline-block;
+	padding-right: 20px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+a{
+    text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.infolist{
+    margin-top: 100px;
+    /* background-color: gray; */
+    background-color: rgba(1, 59, 9, 0.8);
+    border-radius: 10px;
+    padding: 50px 50px;
+    margin-left: 20%; 
+    margin-right: 20%;
+    /* width: 100%; */
+    margin-bottom: 25%;
+}
+
+.myinfotitle{
+margin: 15px 0;
+}

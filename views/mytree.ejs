@@ -1,0 +1,59 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel='stylesheet' href='/stylesheets/mytree.css' />
+    <script type="text/javascript" src="/javascripts/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ebc352988eab997a3fb332f391cfd7f9"></script>
+
+    <header>
+        <% include ./header %>
+    </header>
+
+
+    <div class="mytreeinfo">
+        <div class="mymore"><a href="/myforest/mytree">내나무</a></div>
+        <div class="mymore"><a href="/myforest/myinfo">내정보</a></div>
+
+        <div class="infolist">
+            <div class="mytreetitle">내 나무</div>
+            <!-- 지금까지생성한 블록보여주기  -->
+            <div class="totaltree">총 나무 <%= blockcount %>그루 </div>
+            <!-- <div>전체"나무는 -> 추후에 listtransaction treecount로 변경예정 </div> -->
+            <div class="myaccounttree"> 나의 지분이 있는 나무: 1 그루 </div>
+            <div> 나무가 심어진 시간   <%= datetreetime %></div>
+            <br><br>
+            <div> 나무가 있는 위치 (<%= treecoordX %>,<%= treecoordY %>)</div>
+            <br>
+
+            
+            <div id="map" style="width:200px; height:200px; border-radius: 50%;"></div>
+
+
+            <div class="mytreehash"> 내가 보유한 나무 블록의 해시값:</div>
+            <div>d28edf0209b1652231962d06a5b979f7388901df5deb9bbb011f085d555e0062</div>
+            <% mytransaction.forEach((hash,index)=> { %>
+                <div>
+                    <%= hash.blockhash %>
+                </div>
+                <% })%>
+            <!-- <div>같은블록에 어차피 하나의 트랜잭션만 들어갈것이기 때문에 상관없음 </div> -->
+        </div>
+        
+    </div>
+
+
+
+    <script src="/javascripts/mytree.js"></script>
+
+</body>
+
+</html>

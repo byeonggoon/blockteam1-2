@@ -1,0 +1,159 @@
+
+#header{
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+    /* z-index: 1000; */
+    font-size: 0;
+    background-color: white;
+    padding-bottom: 162px;
+    /* border: 1px solid red; */
+}
+.header_inner{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    
+    /* border: 1px solid green; */
+}
+
+.header_logo{
+    display: inline;
+    vertical-align: middle;
+    margin-right: 300px;
+
+    /* border: 1px solid blue; */
+
+}
+.header_logo img{
+    width: 350px;
+    
+}
+.header_select{
+    
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+
+    /* border: 1px solid yellow; */
+}
+.header_select_symbol{
+    padding: 0 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* ////////////////////////////////////// */
+.logo{
+    height: 70px;
+    width: 140px;
+}
+.tree {
+    height: 100%;
+    width: 100%;
+    float: left;
+	position: relative;
+	z-index: -100;
+}
+.icon { 
+    display: inline-block;
+    float: right;
+}
+
+.moretab{
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	left:50%; 
+	transform:translateX(-50%);
+	padding-top: 20px;
+}
+
+.mymore{
+	display: inline-block;
+	padding-right: 20px;
+}
+
+a{
+    text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.myseed{
+	cursor: default;
+	float: right;
+}
+.myseed:before{
+    font-weight: bold;
+}
+.myseed:hover p{
+    display:block;
+	transform-origin: 100% 0%;
+
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+.myseed p{
+    display: none;
+	text-align: left;
+	background-color: #1E2021;
+	padding: 20px;
+	width: 200px;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	color: #FFF;
+	font-size: 13px;
+	line-height: 1.4;
+	left:45%; 
+	transform:translateX(-45%);
+}
+.myseed p:before{
+	position: absolute;
+	content: '';
+	width:0;
+	height: 0;
+	border:6px solid transparent;
+	border-bottom-color:#1E2021;
+	right:10px;
+	top:-12px;
+}
+.myseed p:after{
+	width:100%;
+	height:40px;
+	content:'';
+	position: absolute;
+	top:-40px;
+	left:0;
+}
+
+.mainslogan{
+	margin-top: 50%;
+	width: 100%;
+	font-size: 30px;
+
+}
+@-webkit-keyframes fadeIn {
+	0% { 
+		opacity:0; 
+		transform: scale(0.6);
+	}
+	100% {
+		opacity:100%;
+		transform: scale(1);
+	}
+}
+@keyframes fadeIn {
+	0% { opacity:0; }
+	100% { opacity:100%; }
+}
+​
